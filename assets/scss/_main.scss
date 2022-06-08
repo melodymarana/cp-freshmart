@@ -1,0 +1,129 @@
+h1 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.875rem;
+  }
+}
+
+h2 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.625rem;
+  }
+}
+
+h4 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.375rem;
+  }
+}
+
+h6 {
+  @include media-breakpoint-down(sm) {
+    font-size: 1.25rem;
+  }
+}
+
+a {
+  color: $primary;
+  text-decoration: unset !important;
+  outline: none;
+}
+
+small {
+  font-size: 0.625rem;
+}
+
+button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.container {
+  &-fluid {
+    @include media-breakpoint-up(md) {
+      max-width: 1200px;
+    }
+  }
+}
+
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+.back-to-top {
+  @include flex-align(center, center);
+  @include bg-gradient($primary, $secondary);
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  font-size: 0.875rem;
+  cursor: pointer;
+
+  .icon {
+    color: $accent;
+  }
+}
+
+.text {
+  &-indent {
+    text-indent: 3rem;
+  }
+  &-green {
+    color: $green-2;
+  }
+  &-orange {
+    color: #f26826;
+  }
+}
+
+
+//Back to top
+.back-to-top {
+  @include flex-align (center, center);
+  background: rgba($green-2, 0.8);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  color: $white;
+  text-align: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  .icon {
+    color: $white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background: $green-2;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}

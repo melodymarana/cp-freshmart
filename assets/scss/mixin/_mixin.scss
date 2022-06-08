@@ -1,0 +1,21 @@
+@mixin line-clamp($line-clamp) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+@mixin word-break($word-break, $text-align) {
+  word-break: $word-break;
+  text-align: $text-align;
+}
+
+@mixin flex-align ($align-items, $justify-content) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin bg-gradient ($primary, $secondary) {
+  background: linear-gradient(to right, $primary 0%, $secondary 100%);
+}

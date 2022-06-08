@@ -1,0 +1,40 @@
+.card {
+  border: 0;
+  border-radius: 0;
+  
+  &-shadow {
+    box-shadow: 0 0.313rem 0.4rem 0 rgba($gray, 0.25);
+  }
+
+  &-img-top {
+    border-radius: 0;
+  }
+
+  &-title {
+    .title {
+      color: $default;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+
+  &-body {
+    padding: 1rem;
+  }
+
+  &-custom {
+    box-shadow: 0 0.313rem 0.4rem 0 rgba($gray, 0.25);
+    border-radius: $border-radius-lg;
+
+    @include media-breakpoint-up(md){
+      padding: 1rem;
+    }
+
+    .card-text {
+      font-size: 1.125rem;
+    }
+  }
+}

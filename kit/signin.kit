@@ -1,0 +1,61 @@
+<!--@include layout/header.kit-->
+
+<!--@include components/main-header.kit-->
+
+<!--@include components/header-banner.kit-->
+
+  <main role="main" class="signin">
+    <section class="section signin-form bg-light-gray">
+      <div class="container-fluid section-wrap">
+        <div class="row justify-content-center">
+          <div class="col-md-7">
+            <div class="card card-custom">
+              <div class="card-body">
+                <h2 class="card-title text-secondary text-center mb-4">เข้าสู่ระบบการใช้งานเว็บไซต์</h2>
+               <form class="form form-signin mb-0" action="">
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">
+                    <span class="text">ชื่อผู้ใช้งาน (อีเมล)</span>
+                  </label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row mb-2">
+                  <label class="col-sm-4 col-form-label">
+                    <span class="text">รหัสผ่าน</span>
+                  </label>
+                  <div class="col-sm-8">
+                    <input type="password" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row justify-content-end mb-5">
+                  <div class="col-sm-8">
+                    <div class="d-flex justify-content-between">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="save-password">
+                        <label class="custom-control-label text-secondary" for="save-password">จดจำรหัสผ่าน</label>
+                      </div>
+                      <a class="text-secondary forgot-password" href="#"><u>ลืมรหัสผ่าน?</u></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a class="btn btn-lg btn-accent rounded-pill text-primary w-100">
+                    เข้าสู่ระบบ
+                  </a>
+                </div>
+               </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!--@include components/_modal-condition.kit-->
+
+<!--@include components/_main-footer.kit-->
+
+<!--@include layout/_footer.kit-->

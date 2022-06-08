@@ -1,0 +1,192 @@
+.navbar {
+  padding: 0.2rem 0;
+  justify-content: flex-start;
+
+  &-header {
+    @include bg-gradient($green-1, $primary);
+  }
+
+  &-top {
+    position: relative;
+    z-index: 1000;
+  }
+
+  &-brand {
+    .img {
+      max-height: 3rem;
+
+      @include media-breakpoint-down(sm) {
+        max-height: 2rem;
+      }
+    }
+  }
+
+  &-account {
+    margin-left: auto;
+
+    .btn-register {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
+    .btn-signin {
+      @include media-breakpoint-down(sm) {
+        border: 0;
+        padding: 0;
+
+        .text {
+          display: none;
+        }
+
+        .icon {
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    &-mb {
+      display: none;
+
+      @include media-breakpoint-down(sm) {
+        display: flex;
+      }
+
+      .btn {
+        @include flex-align(center, center);
+        border-radius: 0;
+        font-size: 1rem;
+        flex: 1;
+
+        .icon {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &-toggler {
+    padding-left: 0;
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+    }
+  }
+
+  &-menu {
+    background: rgba($menu-bg, 0.5);
+    position: relative;
+    z-index: 1000;
+  }
+
+  &-collapse {
+    &.offcanvas-collapse {
+      @include media-breakpoint-down(sm) {
+        background: $white;
+        box-shadow: 0 0.625rem 0.75rem -0.75rem rgba($black, 0.5);
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        right: 0;
+        width: 100%;
+        overflow-y: auto;
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        z-index: 999;
+
+        &.open {
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .navbar-nav {
+      @include media-breakpoint-up(sm) {
+        justify-content: space-between;
+      }
+
+      @include media-breakpoint-up(md){
+        height: 2.688rem;
+      }
+
+      .nav-item {
+        display: flex;
+      }
+
+      .nav-link {
+        color: $menu-color;
+        font-size: 1rem;
+        font-weight: 500;
+        flex: 1;
+        transition: all 0.2s ease-in-out;
+
+        &:hover,
+        &:focus,
+        &.active {
+          background: $accent;
+        }
+
+        @include media-breakpoint-down(sm){
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+          font-size: 1.125rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.header-banner {
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: -2.688rem;
+  }
+}
+
+.header {
+  &-title {
+   @include flex-align(center, flex-start);
+
+   
+
+   .title {
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
+   }
+   
+   .icon-wrap {
+     margin-right: 1rem;
+   }
+  }
+
+  &-wrap {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &-content {
+    font-size: 1.125rem;
+
+    @include media-breakpoint-up(md) {
+      margin-left: 3.438rem;
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.register {
+  font-size: 1.125rem;
+
+  &-details {
+    text-align: center;
+
+    .text {
+      font-size: 1.313rem;
+    }
+
+    .title {
+      color: $primary;
+      font-size: 1.875rem;
+    }
+  }
+
+  &-form {
+    .form-title {
+      color: $header-title;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-information {
+      .form-title {
+        @include media-breakpoint-up(md) {
+          text-align: right;
+        }
+      }
+    }
+
+    .file-uploaded {
+      @include flex-align(center, flex-start);
+
+      .file-name {
+        background-color: #dcdcdc;
+        border: 1px solid #c9c9c9;
+        border-radius: $border-radius;
+        font-size: 0.75rem;
+        margin-right: 0.5rem;
+        padding: 0.125rem 0.5rem;
+
+        @include flex-align(center, space-between);
+
+        .btn-cancle {
+          background-color: transparent;
+          border: 0;
+          margin-left: 0.5rem;
+
+          .icon {
+            color: #787878;
+            font-size: 1rem;
+          }
+
+          &:hover {
+            .icon {
+              color: $danger;
+            }
+          }
+        }
+      }
+    }
+
+    .domain-wrap {
+      font-size: 1rem;
+      
+      @include media-breakpoint-up(md) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .input-group {
+        width: auto;
+        flex: 1;
+        margin: 0.2rem 0 0.5rem 0;
+
+        .form-control {
+          border-radius: $border-radius;
+
+          @include media-breakpoint-up(md) {
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+
+    .domain-name {
+      color: $primary;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+
+      @include media-breakpoint-up(md) {
+        margin-left: 0;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .condition {
+      &-detail {
+        background-color: $white;
+        border: 1px solid #d4d4d4;
+        padding: 1rem;
+        font-size: 0.875rem;
+        max-height: 200px;
+        overflow-y: scroll;
+
+        b {
+          font-weight: 500;
+        }
+
+        .list-unstyled {
+          li {
+            text-indent: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .button-wrap {
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .btn {
+      flex: 1;
+
+      @include media-breakpoint-up(md) {
+        max-width: 20rem;
+        margin: 0 1rem;
+      }
+    }
+  }
+}

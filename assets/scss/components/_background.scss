@@ -1,0 +1,13 @@
+%gradient-secondary {
+  background: linear-gradient(to right, #EA9F25 0%, #FAC02C 50%, #EA9F25 100%);
+}
+
+.bg {
+  &-light-gray {
+    background-color: $light-gray;
+  }
+  
+  &-nude {
+    background-color: #F6EFE8;
+  }
+}

@@ -1,0 +1,346 @@
+.page {
+  .social-links {
+    padding-top: 0.5rem;
+
+    .nav-link {
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+
+      .icon {
+        font-size: 1.125rem;
+      }
+    }
+
+    .facebook {
+      .icon {
+        color: #3b5998 !important;
+      }
+    }
+
+    .twitter {
+      .icon {
+        color: #1daadd !important;
+      }
+    }
+
+    .line {
+      .icon {
+        color: #00c300 !important;
+      }
+    }
+  }
+
+  .section-content {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .section-contact {
+    background: url("../img/banner/contact-bg.jpg") top center/cover no-repeat;
+    font-size: 1.25rem;
+
+    .list {
+      @include media-breakpoint-up(md) {
+      }
+
+      &-item {
+        display: flex;
+        align-items: flex-start;
+
+        @include media-breakpoint-up(md) {
+          align-items: center;
+        }
+
+        .icon {
+          margin-right: 0.6rem;
+          margin-top: 0.563rem;
+
+          @include media-breakpoint-up(md) {
+            margin-top: auto;
+          }
+        }
+
+        .text-wrap {
+          display: flex;
+          flex-direction: column;
+
+          @include media-breakpoint-up(md) {
+            min-width: 12.5rem;
+            flex-direction: row;
+            justify-content: center;
+          }
+
+          .label {
+            font-weight: 500;
+
+            @include media-breakpoint-up(md) {
+              width: 11rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-project {
+    @include media-breakpoint-up(md) {
+      font-size: 1.25rem;
+    }
+
+    .list {
+      .list-item {
+        display: flex;
+        padding: 0.2rem 0;
+
+        &::before {
+          content: url("../img/icon/icon-outline-check.png");
+          vertical-align: middle;
+          margin-right: 1rem;
+          margin-top: 0.15rem;
+        }
+      }
+    }
+  }
+
+  .function-website {
+    .package-box {
+      border: 0.125rem solid #057d7c;
+      border-radius: 0.625rem;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      @include media-breakpoint-up(sm) {
+        flex-direction: row;
+        max-width: 60.625rem;
+        margin: auto;
+      }
+
+      .box {
+        line-height: 1.2;
+
+        &-title {
+          background: linear-gradient(to right, #51a695 0%, #057d7c 100%);
+          color: $white;
+          flex-direction: column;
+          overflow: hidden;
+          position: relative;
+          padding: 1rem;
+          
+          @include flex-align(center, center);
+
+          @include media-breakpoint-up(sm) {
+            flex: 0 0 40%;
+          }
+
+          .title {
+            font-size: 2.3rem;
+            font-weight: 400;
+            text-align: center;
+
+            @include media-breakpoint-up(sm) {
+              font-size: 2.813rem;
+            }
+          }
+
+          .icon {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            width: 32%;
+
+            @include media-breakpoint-up(md) {
+              width: auto;
+            }
+          }
+        }
+
+        &-content {
+          @include media-breakpoint-up(sm) {
+            flex: 0 0 60%;
+          }
+
+          .title {
+            background-color: $green-2;
+            color: $white;
+            font-size: 1.75rem;
+            font-weight: 500;
+            padding: 0.5rem;
+            text-align: center;
+
+            @include media-breakpoint-up(sm) {
+              font-size: 1.875rem;
+            }
+          }
+
+          .content {
+            padding: 1.5rem 0.5rem;
+          }
+
+          .text-wrap {
+            color: $secondary;
+            font-size: 2.3rem;
+            font-weight: 500;
+            text-align: center;
+
+            @include media-breakpoint-up(sm) {
+              font-size: 2.5rem;
+            }
+
+            .text-highlight {
+              font-size: 2.3rem;
+
+              @include media-breakpoint-up(sm) {
+                font-size: 3.313rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .function-lists {
+      .list {
+        display: flex;
+        &-icon {
+          .icon {
+            margin-top: -1rem;
+          }
+        }
+
+        &-content {
+          margin-left: 0.5rem;
+
+          @include media-breakpoint-up(sm) {
+            margin-left: 1rem;
+          }
+
+          .title {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .question-answer {
+    .row {
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+    }
+
+    .wrap {
+      display: flex;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    .card {
+      border: 0.063rem solid $primary;
+      border-radius: 0.625rem;
+      margin-bottom: 1.5rem;
+
+      &-title {
+        color: $orange;
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+
+      &-text {
+        color: $primary;
+      }
+    }
+  }
+
+  .manual {
+    .box {
+      margin-bottom: 1.5rem;
+
+      &-title {
+        color: $primary;
+        font-size: 1.375rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+        position: relative;
+
+        @include flex-align(center, flex-start);
+
+        @include media-breakpoint-up(sm) {
+          font-size: 1.625rem;
+
+          &::after {
+            content: " ";
+            display: block;
+            background: linear-gradient(to right, #8ccb4d 0%, #fff 100%);
+            height: 0.188rem;
+            position: absolute;
+            left: 1.5rem;
+            right: 0;
+            bottom: 0.5rem;
+          }
+        }
+
+        .icon {
+          margin-right: 1rem;
+          position: relative;
+          z-index: 9;
+        }
+      }
+
+      &-content {
+        .list {
+          &-group {
+            flex-wrap: wrap;
+
+            @include media-breakpoint-up(sm) {
+              flex-direction: row;
+            }
+          }
+
+          &-item {
+            flex: 0 0 50%;
+            padding: 0.2rem;
+
+            @include flex-align(unset, space-between);
+
+            @include media-breakpoint-up(md) {
+              padding-left: 5rem;
+            }
+          }
+
+          &-title {
+            display: flex;
+
+            &::before {
+              content: url("../img/manual/icon-bullet.png");
+              vertical-align: middle;
+              margin-right: 0.625rem;
+              margin-top: 0.5rem;
+            }
+          }
+
+          &-buttons {
+            margin-left: 0.5rem;
+
+            @include flex-align(center, center);
+
+            @include media-breakpoint-up(sm) {
+              justify-content: flex-end;
+            }
+
+            .btn-pdf {
+              color: $orange;
+            }
+
+            .btn-play {
+              color: #1cbbb4;
+            }
+          }
+        }
+      }
+    }
+  }
+}

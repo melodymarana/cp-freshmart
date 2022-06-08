@@ -1,0 +1,83 @@
+<!--@include layout/header.kit-->
+
+<!--@include components/main-header.kit-->
+
+	<main role="main" class="setting">
+		<header class="header setting-header">
+			<div class="container-fluid header-wrap">
+				<div class="header-title mb-3">
+					<div class="icon-wrap">
+						<img class="icon" src="../assets/img/icon/icon-layout.svg" alt="">
+					</div>
+					<h1 class="title text-secondary mb-0">เลือกรูปแบบการจัดวางเนื้อหาบนหน้าแรกเว็บไซต์</h1>
+				</div>
+				<div class="header-content">
+					รูปแบบการจัดวางเนื้อหา คือโครงสร้างการจัดวางข้อมูลในหน้าแรก โดยรูปแบบการจัดวางเนื้อหาแต่ละรูปแบบจะแตกต่างกันที่การจัดวางการแสดงข้อมูล ซึ่งสามารถแสดงผลข้อมูลในหน้าแรกได้สูงสุด 4 บล็อก แต่ละบล็อกสามารถเลือกข้อมูลของแต่ละระบบมาแสดงผลในหน้าแรกได้ เช่น ข้อมูลสินค้า , ข้อมูลข่าวสาร , ข้อมูลบทความ เป็นต้น เมื่อทำการเลือกรูปแบบการจัดวางเนื้อหาบนหน้าแรกเว็บไซต์แล้ว จะไม่สามารถแก้ไข ปรับเปลี่ยนรูปแบบการจัดวางของแต่ละรูปแบบได้ แต่ท่านสามารถเลือกเปลี่ยนรูปแบบการจัดวางในภายหลังได้และสามารถแก้ไขข้อมูลในแต่ละส่วนเองได้ตามความต้องการ
+				</div>
+			</div>
+		</header>
+
+		<section class="section setting-theme bg-nude">
+			<div class="container-fluid section-wrap">
+				<div class="section-content">
+					<div class="row themes-wrap mb-3">
+						<div class="col-md-6 col-lg-3">
+							<!--$layout-image = ../assets/img/layout/layout-1.jpg-->
+							<!--$number = A-->
+							<!--@include components/_card-layout-box.kit-->
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<!--$layout-image = ../assets/img/layout/layout-2.jpg-->
+							<!--$number = B-->
+							<!--@include components/_card-layout-box.kit-->
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<!--$layout-image = ../assets/img/layout/layout-3.jpg-->
+							<!--$number = C-->
+							<!--@include components/_card-layout-box.kit-->
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<!--$layout-image = ../assets/img/layout/layout-4.jpg-->
+							<!--$number = D-->
+							<!--@include components/_card-layout-box.kit-->
+						</div>
+					</div>
+					<div class="button-wrap">
+						<a class="btn btn-lg btn-nude rounded-pill mr-sm-3 mb-3 mb-sm-0" href="#">
+							ย้อนกลับ
+						</a>
+						<a class="btn btn-lg btn-accent rounded-pill" href="#">
+							<i class="fas fa-edit icon"></i>
+							เข้าสู่จัดการหน้าเว็บ
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-contact bg-light-gray">
+			<div class="container-fluid section-wrap">
+				<h2 class="text-secondary">สอบถามวิธีการลงทะเบียน</h3>
+					<p>หากมีคำถาม หรือข้อสงสัยเพิ่มเติมสามารถติดต่อสอบถามได้ที่</p>
+					<ul class="list list-unstyled mb-2">
+						<li class="list-item row">
+							<span class="label col-5 col-md-2">โทรศัพท์หมายเลข</span>
+							<span class="text">: <a class="text-dark" href="tel:028323240">02-832-3240</a></span>
+						</li>
+						<li class="list-item row">
+							<span class="label col-5 col-md-2">Line Official</span>
+							<span class="text">: <a class="text-dark" href="http://line.me/ti/p/%40igetweb.com">@CPFMSHOP</a></span>
+						</li>
+						<li class="list-item row">
+							<span class="label col-5 col-md-2">อีเมล</span>
+							<span class="text">: <a class="text-dark" href="mailto:support@cpfmshop.com">support@cpfmshop.com</a></span>
+						</li>
+					</ul>
+					<p>หรือสามารถตรวจสอบเงื่อนไขการลงทะเบียนเข้าร่วมโครงการได้ที่นี่ <a href="#">คลิกเลย</a></p>
+			</div>
+		</section>
+	</main>
+
+<!--@include components/_main-footer.kit-->
+
+<!--@include layout/_footer.kit-->

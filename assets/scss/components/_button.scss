@@ -1,0 +1,56 @@
+.btn {
+  &-sm {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &-lg {
+    font-size: 1.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  &-accent {
+    background: $accent;
+
+    &:hover,
+    &:focus {
+      background: darken($accent, 5%);
+      color: $primary;
+    }
+  }
+
+  &-nude {
+    background: #E3CD9E;
+
+    &:hover,
+    &:focus {
+      background: darken(#E3CD9E, 5%);
+    }
+  }
+  
+  &-default {
+    background: $gray;
+    color: $default;
+
+    &:hover,
+    &:focus {
+      background: darken($gray, 5%);
+    }
+  }
+
+  &-outline {
+    &-primary {
+      border: 1px solid #24886c;
+      color: white;
+    }
+  }
+
+  &-gradient {
+    &-secondary {
+      color: $primary;
+
+      @extend %gradient-secondary;
+    }
+  }
+}
